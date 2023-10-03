@@ -20,7 +20,7 @@ type Input = {
 export default function Home() {
   const {
     handleSubmit,
-    reset,
+    setValue,
     control,
     formState: { errors },
   } = useForm<Input>();
@@ -30,6 +30,7 @@ export default function Home() {
   const [instagram, setInstagram] = useState(false);
 
   const handleFormSubmit: SubmitHandler<Input> = (data) => {
+    setValue('email', '');
   };
 
   return (
