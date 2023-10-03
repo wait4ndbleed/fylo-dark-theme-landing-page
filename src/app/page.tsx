@@ -36,9 +36,9 @@ export default function Home() {
   return (
     <>
       <div
-        className={`bg-[#1c2431] h-[600px] sm:h-[900px] md:h-[1200px] max-w-screen bg-[url('../assets/images/bg-curvy-mobile.svg')] md:bg-[url('../assets/images/bg-curvy-desktop.svg')] bg-no-repeat bg-bottom bg-contain`}
+        className={`bg-[#1c2431] h-[600px] sm:h-[900px] md:h-[1200px]  w-full bg-[url('../assets/images/bg-curvy-mobile.svg')] md:bg-[url('../assets/images/bg-curvy-desktop.svg')] bg-no-repeat bg-bottom bg-contain`}
       >
-        <header className="z-10 container max-w-6xl m-auto pt-6 px-6 md:px-0 flex justify-between">
+        <header className="z-10  max-w-6xl m-auto pt-6 px-6 md:px-0 flex justify-between">
           <div>
             <a href="" aria-label="Home page">
               <img
@@ -68,8 +68,8 @@ export default function Home() {
             </ul>
           </nav>
         </header>
-        <main className="z-10 px-6 md:px-0">
-          <div className="flex flex-col items-center container max-w-3xl m-auto mt-10">
+        <main className="px-6 md:px-0">
+          <div className="flex flex-col items-center  max-w-3xl m-auto mt-10">
             <img
               src="./assets/images/illustration-intro.png"
               className="w-fit mb-8"
@@ -92,7 +92,7 @@ export default function Home() {
             </button>
           </div>
           <section>
-            <div className="container max-w-4xl m-auto grid md:grid-cols-2 gap-28">
+            <div className=" max-w-4xl m-auto grid md:grid-cols-2 gap-28">
               <div className="flex flex-col items-center">
                 <img src="./assets/images/icon-access-anywhere.svg" alt="" />
                 <h2
@@ -145,7 +145,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <section className="container max-w-5xl m-auto mt-40 mb-36 md:mb-0">
+            <section className=" max-w-5xl m-auto mt-40 mb-36 md:mb-0">
               <div className="flex flex-col md:flex-row gap-10">
                 <div>
                   <img
@@ -183,7 +183,7 @@ export default function Home() {
                 </div>
               </div>
             </section>
-            <section className="container max-w-5xl grid md:grid-cols-3  md:gap-10 m-auto mt-20 pb-80 bg-[url('../assets/images/bg-quotes.png')] bg-no-repeat bg-left-top">
+            <section className=" max-w-5xl grid md:grid-cols-3  md:gap-10 m-auto mt-20 pb-80 bg-[url('../assets/images/bg-quotes.png')] bg-no-repeat bg-left-top">
               <div className="bg-[#202a3c] p-5 rounded-sm mt-8 ml-2">
                 <p className="mt-5">
                   Fylo has improves our team productivity by an order of
@@ -307,14 +307,14 @@ export default function Home() {
               </div>
             </div>
           </label>
-          <div className="container max-w-6xl m-auto">
+          <div className=" max-w-6xl m-auto">
             <img
               src="./assets/images/logo.svg"
               className="md:w-24 mb-7 -mt-6"
               alt=""
             />
             <div className="flex flex-col md:flex-row justify-between">
-              <div className="flex gap-4 w-96">
+              <div className="flex gap-4 max-w-[360px]">
                 <div className="w-[13px] pt-1">
                   <img src="./assets/images/icon-location.svg" alt="" />
                 </div>

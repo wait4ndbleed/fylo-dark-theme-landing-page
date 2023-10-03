@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='max-w-screen'>
-      <body className={`${open_sans.className} text-sm text-gray-300 bg-[#181f2a]`}>{children}</body>
+    <html lang="en">
+      <body className={`${open_sans.className} text-sm text-gray-300 bg-[#181f2a] overflow-x-hidden`}>{children}</body>
     </html>
   )
 }
