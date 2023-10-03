@@ -36,9 +36,9 @@ export default function Home() {
   return (
     <>
       <div
-        className={`bg-[#1c2431] w-screen bg-[url('../assets/images/bg-curvy-desktop.svg')] bg-no-repeat bg-bottom px-6 md:px-0`}
+        className={`bg-[#1c2431] h-[600px] sm:h-[900px] md:h-[1200px] w-screen bg-[url('../assets/images/bg-curvy-mobile.svg')] md:bg-[url('../assets/images/bg-curvy-desktop.svg')] bg-no-repeat bg-bottom bg-contain`}
       >
-        <header className="container max-w-6xl m-auto pt-6 flex justify-between">
+        <header className="z-10 container max-w-6xl m-auto pt-6 px-6 md:px-0 flex justify-between">
           <div>
             <a href="" aria-label="Home page">
               <img
@@ -48,7 +48,7 @@ export default function Home() {
               />
             </a>
           </div>
-          <div className="flex items-center">
+          <nav className="flex items-center">
             <ul className={`flex ${raleway.className}`}>
               <li>
                 <a href="#" className="hover:text-white hover:underline">
@@ -66,338 +66,341 @@ export default function Home() {
                 </a>
               </li>
             </ul>
-          </div>
+          </nav>
         </header>
-        <main className="flex flex-col items-center container max-w-3xl m-auto mt-10">
-          <img
-            src="./assets/images/illustration-intro.png"
-            className="w-fit mb-8"
-            alt=""
-          />
-          <h1
-            className={`${raleway.className} font-bold text-2xl px-10 md:px-0 md:text-4xl text-center text-white mb-6 md:mb-16`}
-          >
-            All your files in one secure location, accessible anywhere
-          </h1>
-          <p className="text-center text-white w-[80%] mb-10 md:px-16">
-            Fylo stores all your most important files in one secure. Access them
-            wherever you need, share and collaborate with friends family, and
-            co-workers.
-          </p>
-          <button
-            className={`${raleway.className} mb-40 px-20 py-3 rounded-full bg-gradient-to-r text-white font-bold from-[#5bc2d1] to-[#3faeca] hover:from-[#8cdae7] hover:to-[#8bdaeb]`}
-          >
-            Get Started
-          </button>
-        </main>
-      </div>
-      <section className="w-screen px-6 md:px-0">
-        <div className="container max-w-4xl m-auto grid md:grid-cols-2 gap-28">
-          <div className="flex flex-col items-center">
-            <img src="./assets/images/icon-access-anywhere.svg" alt="" />
-            <h2
-              className={`${raleway.className} text-center text-white text-xl font-bold `}
+        <main className="z-10 px-6 md:px-0">
+          <div className="flex flex-col items-center container max-w-3xl m-auto mt-10">
+            <img
+              src="./assets/images/illustration-intro.png"
+              className="w-fit mb-8"
+              alt=""
+            />
+            <h1
+              className={`${raleway.className} font-bold text-2xl px-10 md:px-0 md:text-4xl text-center text-white mb-6 md:mb-16`}
             >
-              Access your files, anywhere
-            </h2>
-            <p className="text-center">
-              The ability to use a smartphone, tables, or computer to access
-              your account means your files follow you everywhere.
+              All your files in one secure location, accessible anywhere
+            </h1>
+            <p className="text-center text-white w-[80%] mb-10 md:px-16">
+              Fylo stores all your most important files in one secure. Access
+              them wherever you need, share and collaborate with friends family,
+              and co-workers.
             </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img src="./assets/images/icon-security.svg" alt="" />
-            <h2
-              className={`${raleway.className} text-center text-white text-xl font-bold `}
+            <button
+              className={`${raleway.className} mb-40 px-20 py-3 rounded-full bg-gradient-to-r text-white font-bold from-[#5bc2d1] to-[#3faeca] hover:from-[#8cdae7] hover:to-[#8bdaeb]`}
             >
-              Security you can trust
-            </h2>
-            <p className="text-center">
-              2-factor authentication and user-controlled encryption are just a
-              couple of the security features we allow to help secure your
-              files.
-            </p>
+              Get Started
+            </button>
           </div>
-          <div className="flex flex-col items-center">
-            <img src="./assets/images/icon-collaboration.svg" alt="" />
-            <h2
-              className={`${raleway.className} text-center text-white text-xl font-bold `}
-            >
-              Real-time collaboration
-            </h2>
-            <p className="text-center">
-              Securely share files and folders with friends, family and
-              colleagues for live collaboration. No email attachments required.
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img src="./assets/images/icon-any-file.svg" alt="" />
-            <h2
-              className={`${raleway.className} text-center text-white text-xl font-bold `}
-            >
-              Store any type of file
-            </h2>
-            <p className="text-center">
-              Whether you're sharing holidays photos or work documents, Fylo has
-              you covered allowing for all file types to be securely stored and
-              shared.
-            </p>
-          </div>
-        </div>
-        <section className="container max-w-5xl m-auto mt-40 mb-36 md:mb-0">
-          <div className="flex flex-col md:flex-row gap-10">
-            <div>
-              <img
-                src="./assets/images/illustration-stay-productive.png"
-                alt=""
-              />
+          <section className="w-screen">
+            <div className="container max-w-4xl m-auto grid md:grid-cols-2 gap-28">
+              <div className="flex flex-col items-center">
+                <img src="./assets/images/icon-access-anywhere.svg" alt="" />
+                <h2
+                  className={`${raleway.className} text-center text-white text-xl font-bold `}
+                >
+                  Access your files, anywhere
+                </h2>
+                <p className="text-center">
+                  The ability to use a smartphone, tables, or computer to access
+                  your account means your files follow you everywhere.
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src="./assets/images/icon-security.svg" alt="" />
+                <h2
+                  className={`${raleway.className} text-center text-white text-xl font-bold `}
+                >
+                  Security you can trust
+                </h2>
+                <p className="text-center">
+                  2-factor authentication and user-controlled encryption are
+                  just a couple of the security features we allow to help secure
+                  your files.
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src="./assets/images/icon-collaboration.svg" alt="" />
+                <h2
+                  className={`${raleway.className} text-center text-white text-xl font-bold `}
+                >
+                  Real-time collaboration
+                </h2>
+                <p className="text-center">
+                  Securely share files and folders with friends, family and
+                  colleagues for live collaboration. No email attachments
+                  required.
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src="./assets/images/icon-any-file.svg" alt="" />
+                <h2
+                  className={`${raleway.className} text-center text-white text-xl font-bold `}
+                >
+                  Store any type of file
+                </h2>
+                <p className="text-center">
+                  Whether you're sharing holidays photos or work documents, Fylo
+                  has you covered allowing for all file types to be securely
+                  stored and shared.
+                </p>
+              </div>
             </div>
-            <div className="flex flex-col justify-center gap-2">
-              <h2
-                className={`${raleway.className} font-bold text-xl md:text-5xl text-white`}
-              >
-                Stay productive, wherever you are
-              </h2>
-              <p>
-                Never let location be and issue when accessing your files. Fylo
-                has you covered for all of your file storage needs.
-              </p>
-              <p>
-                Securely share files and folders with friends, family and
-                colleagues for live collaboretion. No email attachments
-                required.
-              </p>
-              <div>
-                <a href="#">
-                  <p
-                    className="text-[#8cdae7] hover:text-white border-b border-[#8cdae7] hover:border-white inline-block"
-                    onMouseOver={() => setArrow(true)}
-                    onMouseLeave={() => setArrow(false)}
+            <section className="container max-w-5xl m-auto mt-40 mb-36 md:mb-0">
+              <div className="flex flex-col md:flex-row gap-10">
+                <div>
+                  <img
+                    src="./assets/images/illustration-stay-productive.png"
+                    alt=""
+                  />
+                </div>
+                <div className="flex flex-col justify-center gap-2">
+                  <h2
+                    className={`${raleway.className} font-bold text-xl md:text-5xl text-white`}
                   >
-                    See how Fylo works
-                    <SvgArrow color={arrow} className="inline-block" />
+                    Stay productive, wherever you are
+                  </h2>
+                  <p>
+                    Never let location be and issue when accessing your files.
+                    Fylo has you covered for all of your file storage needs.
                   </p>
-                </a>
+                  <p>
+                    Securely share files and folders with friends, family and
+                    colleagues for live collaboretion. No email attachments
+                    required.
+                  </p>
+                  <div>
+                    <a href="#">
+                      <p
+                        className="text-[#8cdae7] hover:text-white border-b border-[#8cdae7] hover:border-white inline-block"
+                        onMouseOver={() => setArrow(true)}
+                        onMouseLeave={() => setArrow(false)}
+                      >
+                        See how Fylo works
+                        <SvgArrow color={arrow} className="inline-block" />
+                      </p>
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </section>
-        <section className="container max-w-5xl grid md:grid-cols-3  md:gap-10 m-auto mt-20 pb-80 bg-[url('../assets/images/bg-quotes.png')] bg-no-repeat bg-left-top">
-          <div className="bg-[#202a3c] p-5 rounded-sm mt-8 ml-2">
-            <p className="mt-5">
-              Fylo has improves our team productivity by an order of magnitude.
-              Since making the switch our team has bocome a well-oiled
-              collaboration machine.
-            </p>
-            <div className="flex gap-2 mt-5">
-              <div className="flex items-center">
-                <img
-                  src="./assets/images/profile-1.jpg"
-                  className="w-8 rounded-full"
-                  alt=""
-                />
+            </section>
+            <section className="container max-w-5xl grid md:grid-cols-3  md:gap-10 m-auto mt-20 pb-80 bg-[url('../assets/images/bg-quotes.png')] bg-no-repeat bg-left-top">
+              <div className="bg-[#202a3c] p-5 rounded-sm mt-8 ml-2">
+                <p className="mt-5">
+                  Fylo has improves our team productivity by an order of
+                  magnitude. Since making the switch our team has bocome a
+                  well-oiled collaboration machine.
+                </p>
+                <div className="flex gap-2 mt-5">
+                  <div className="flex items-center">
+                    <img
+                      src="./assets/images/profile-1.jpg"
+                      className="w-8 rounded-full"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex flex-col justify-center">
+                    <h2
+                      className={`${raleway.className} text-white text-sm font-bold`}
+                    >
+                      Satish Patel
+                    </h2>
+                    <p className="text-[10px]">Founder & CEO, Huddle</p>
+                  </div>
+                </div>
               </div>
-              <div className="flex flex-col justify-center">
-                <h2
-                  className={`${raleway.className} text-white text-sm font-bold`}
-                >
-                  Satish Patel
-                </h2>
-                <p className="text-[10px]">Founder & CEO, Huddle</p>
+              <div className="bg-[#202a3c] p-5 rounded-sm mt-8 ml-2">
+                <p className="mt-5">
+                  Fylo has improves our team productivity by an order of
+                  magnitude. Since making the switch our team has bocome a
+                  well-oiled collaboration machine.
+                </p>
+                <div className="flex gap-2 mt-5">
+                  <div className="flex items-center">
+                    <img
+                      src="./assets/images/profile-2.jpg"
+                      className="w-8 rounded-full"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex flex-col justify-center">
+                    <h2
+                      className={`${raleway.className} text-white text-sm font-bold`}
+                    >
+                      Bruce McKenzie
+                    </h2>
+                    <p className="text-[10px]">Founder & CEO, Huddle</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="bg-[#202a3c] p-5 rounded-sm mt-8 ml-2">
-            <p className="mt-5">
-              Fylo has improves our team productivity by an order of magnitude.
-              Since making the switch our team has bocome a well-oiled
-              collaboration machine.
-            </p>
-            <div className="flex gap-2 mt-5">
-              <div className="flex items-center">
-                <img
-                  src="./assets/images/profile-2.jpg"
-                  className="w-8 rounded-full"
-                  alt=""
-                />
+              <div className="bg-[#202a3c] p-5 rounded-sm mt-8 ml-2">
+                <p className="mt-5">
+                  Fylo has improves our team productivity by an order of
+                  magnitude. Since making the switch our team has bocome a
+                  well-oiled collaboration machine.
+                </p>
+                <div className="flex gap-2 mt-5">
+                  <div className="flex items-center">
+                    <img
+                      src="./assets/images/profile-3.jpg"
+                      className="w-8 rounded-full"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex flex-col justify-center">
+                    <h2
+                      className={`${raleway.className} text-white text-sm font-bold`}
+                    >
+                      Iva Boyd
+                    </h2>
+                    <p className="text-[10px]">Founder & CEO, Huddle</p>
+                  </div>
+                </div>
               </div>
-              <div className="flex flex-col justify-center">
-                <h2
-                  className={`${raleway.className} text-white text-sm font-bold`}
-                >
-                  Bruce McKenzie
-                </h2>
-                <p className="text-[10px]">Founder & CEO, Huddle</p>
-              </div>
-            </div>
-          </div>
-          <div className="bg-[#202a3c] p-5 rounded-sm mt-8 ml-2">
-            <p className="mt-5">
-              Fylo has improves our team productivity by an order of magnitude.
-              Since making the switch our team has bocome a well-oiled
-              collaboration machine.
-            </p>
-            <div className="flex gap-2 mt-5">
-              <div className="flex items-center">
-                <img
-                  src="./assets/images/profile-3.jpg"
-                  className="w-8 rounded-full"
-                  alt=""
-                />
-              </div>
-              <div className="flex flex-col justify-center">
-                <h2
-                  className={`${raleway.className} text-white text-sm font-bold`}
-                >
-                  Iva Boyd
-                </h2>
-                <p className="text-[10px]">Founder & CEO, Huddle</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
-      <footer className="bg-[#0b1523] w-screen pb-12 m-0">
-        <label className="bg-[#1c2230] max-w-3xl px-14 pb-4 mx-6 relative top-[-150px] md:top-[-100px] flex flex-col items-center md:mx-auto rounded-md">
-          <h2
-            className={`${raleway.className} font-bold text-lg md:text-3xl text-center md:text-left text-white mt-10 mb-5`}
-          >
-            Get eraly access today
-          </h2>
-          <p className="text-center mb-5">
-            It only takes a minuteto sign up and our starter tier is extremely
-            generous. If you have any questions, our support team would be happy
-            to help you.
-          </p>
-          <div className="w-full">
-            <form
-              onSubmit={handleSubmit(handleFormSubmit)}
-              className="flex flex-col md:flex-row gap-8"
+            </section>
+          </section>
+        </main>
+        <footer className="bg-[#0b1523] w-screen pb-12 m-0 px-6 md:px-0">
+          <label className="bg-[#1c2230] max-w-3xl px-14 pb-4 mx-6 relative top-[-150px] md:top-[-100px] flex flex-col items-center md:mx-auto rounded-md">
+            <h2
+              className={`${raleway.className} font-bold text-lg md:text-3xl text-center md:text-left text-white mt-10 mb-5`}
             >
-              <Controller
-                name="email"
-                control={control}
-                rules={{
-                  required: true,
-                  pattern:
-                    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-                }}
-                render={({ field }) => (
-                  <input
-                    {...field}
-                    type="text"
-                    id="email"
-                    className="px-4 py-2 w-full rounded-full text-black"
-                  />
-                )}
-              />
+              Get eraly access today
+            </h2>
+            <p className="text-center mb-5">
+              It only takes a minuteto sign up and our starter tier is extremely
+              generous. If you have any questions, our support team would be
+              happy to help you.
+            </p>
+            <div className="w-full">
+              <form
+                onSubmit={handleSubmit(handleFormSubmit)}
+                className="flex flex-col md:flex-row gap-8"
+              >
+                <Controller
+                  name="email"
+                  control={control}
+                  rules={{
+                    required: true,
+                    pattern:
+                      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                  }}
+                  render={({ field }) => (
+                    <input
+                      {...field}
+                      type="text"
+                      id="email"
+                      className="px-4 py-2 w-full rounded-full text-black"
+                    />
+                  )}
+                />
 
-              <input
-                type="submit"
-                value="Get Started For Free"
-                className={`${raleway.className} px-5 py-3 rounded-full bg-gradient-to-r text-white font-bold cursor-pointer from-[#5bc2d1] to-[#3faeca] hover:from-[#8cdae7] hover:to-[#8bdaeb]`}
-              />
-            </form>
-            <div
-              className={`h-4 ml-4 text-[#ff4242] text-[10px] ${raleway.className} font-bold `}
-            >
-              {errors.email && "Please enter a valid email address"}
+                <input
+                  type="submit"
+                  value="Get Started For Free"
+                  className={`${raleway.className} px-5 py-3 rounded-full bg-gradient-to-r text-white font-bold cursor-pointer from-[#5bc2d1] to-[#3faeca] hover:from-[#8cdae7] hover:to-[#8bdaeb]`}
+                />
+              </form>
+              <div
+                className={`h-4 ml-4 text-[#ff4242] text-[10px] ${raleway.className} font-bold `}
+              >
+                {errors.email && "Please enter a valid email address"}
+              </div>
+            </div>
+          </label>
+          <div className="container max-w-6xl m-auto">
+            <img
+              src="./assets/images/logo.svg"
+              className="md:w-24 mb-7 -mt-6"
+              alt=""
+            />
+            <div className="flex flex-col md:flex-row justify-between">
+              <div className="flex gap-4 w-96">
+                <div className="w-[13px] pt-1">
+                  <img src="./assets/images/icon-location.svg" alt="" />
+                </div>
+                <div className="w-[80%] md:pr-0">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </div>
+              </div>
+              <div>
+                <div className="flex gap-4 mb-4 mt-6 md:mt-0">
+                  <div>
+                    <img src="./assets/images/icon-phone.svg" alt="" />
+                  </div>
+                  <div>+1-543-123-4567</div>
+                </div>
+                <div className="flex gap-4">
+                  <div>
+                    <img src="./assets/images/icon-email.svg" alt="" />
+                  </div>
+                  <div>example@fylo.com</div>
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row gap-8 md:gap-6 mt-16 md:mt-0">
+                <div>
+                  <ul>
+                    <li className="mb-2 hover:font-bold">
+                      <a href="#">About Us</a>
+                    </li>
+                    <li className="mb-2 hover:font-bold">
+                      <a href="#">Jobs</a>
+                    </li>
+                    <li className="mb-2 hover:font-bold">
+                      <a href="#">Press</a>
+                    </li>
+                    <li className=" hover:font-bold">
+                      <a href="#">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li className="mb-2 hover:font-bold">
+                      <a href="#">Contat Us</a>
+                    </li>
+                    <li className="mb-2 hover:font-bold">
+                      <a href="#">Terms</a>
+                    </li>
+                    <li className=" hover:font-bold">
+                      <a href="#">Privacy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="flex justify-center gap-4 mt-20 md:mt-0">
+                <div>
+                  <a href="#" aria-label="Facebook">
+                    <SvgFacebook
+                      onMouseOver={() => setFacebook(true)}
+                      onMouseLeave={() => setFacebook(false)}
+                      color={facebook}
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a href="#" aria-label="Twitter">
+                    <SvgTwitter
+                      onMouseOver={() => setTwitter(true)}
+                      onMouseLeave={() => setTwitter(false)}
+                      color={twitter}
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a href="#" aria-label="Instagram">
+                    <SvgInstagram
+                      onMouseOver={() => setInstagram(true)}
+                      onMouseLeave={() => setInstagram(false)}
+                      color={instagram}
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </label>
-        <div className="container max-w-6xl m-auto px-6 md:px-0">
-          <img
-            src="./assets/images/logo.svg"
-            className="md:w-24 mb-7 -mt-6"
-            alt=""
-          />
-          <div className="flex flex-col md:flex-row justify-between">
-            <div className="flex gap-4 w-96">
-              <div className="w-[13px] pt-1">
-                <img src="./assets/images/icon-location.svg" alt="" />
-              </div>
-              <div className="w-[80%] md:pr-0">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </div>
-            </div>
-            <div>
-              <div className="flex gap-4 mb-4 mt-6 md:mt-0">
-                <div>
-                  <img src="./assets/images/icon-phone.svg" alt="" />
-                </div>
-                <div>+1-543-123-4567</div>
-              </div>
-              <div className="flex gap-4">
-                <div>
-                  <img src="./assets/images/icon-email.svg" alt="" />
-                </div>
-                <div>example@fylo.com</div>
-              </div>
-            </div>
-            <div className="flex flex-col md:flex-row gap-8 md:gap-6 mt-16 md:mt-0">
-              <div>
-                <ul>
-                  <li className="mb-2 hover:font-bold">
-                    <a href="#">About Us</a>
-                  </li>
-                  <li className="mb-2 hover:font-bold">
-                    <a href="#">Jobs</a>
-                  </li>
-                  <li className="mb-2 hover:font-bold">
-                    <a href="#">Press</a>
-                  </li>
-                  <li className=" hover:font-bold">
-                    <a href="#">Blog</a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul>
-                  <li className="mb-2 hover:font-bold">
-                    <a href="#">Contat Us</a>
-                  </li>
-                  <li className="mb-2 hover:font-bold">
-                    <a href="#">Terms</a>
-                  </li>
-                  <li className=" hover:font-bold">
-                    <a href="#">Privacy</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="flex justify-center gap-4 mt-20 md:mt-0">
-              <div>
-                <a href="#" aria-label="Facebook">
-                  <SvgFacebook
-                    onMouseOver={() => setFacebook(true)}
-                    onMouseLeave={() => setFacebook(false)}
-                    color={facebook}
-                  />
-                </a>
-              </div>
-              <div>
-                <a href="#" aria-label="Twitter">
-                  <SvgTwitter
-                    onMouseOver={() => setTwitter(true)}
-                    onMouseLeave={() => setTwitter(false)}
-                    color={twitter}
-                  />
-                </a>
-              </div>
-              <div>
-                <a href="#" aria-label="Instagram">
-                  <SvgInstagram
-                    onMouseOver={() => setInstagram(true)}
-                    onMouseLeave={() => setInstagram(false)}
-                    color={instagram}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </>
   );
 }
