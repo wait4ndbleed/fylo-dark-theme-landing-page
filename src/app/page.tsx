@@ -260,7 +260,7 @@ export default function Home() {
           </section>
         </main>
         <footer className="bg-[#0b1523] w-screen pb-12 m-0 px-6 md:px-0">
-          <label className="bg-[#1c2230] max-w-3xl px-14 pb-4 mx-6 relative top-[-150px] md:top-[-100px] flex flex-col items-center md:mx-auto rounded-md">
+          <label className="bg-[#1c2230] max-w-3xl px-6 md:px-14 pb-4 mx-6 relative top-[-150px] md:top-[-100px] flex flex-col items-center md:mx-auto rounded-md">
             <h2
               className={`${raleway.className} font-bold text-lg md:text-3xl text-center md:text-left text-white mt-10 mb-5`}
             >
