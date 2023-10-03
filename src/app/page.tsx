@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <>
       <div
-        className={`bg-[#1c2431] h-[600px] sm:h-[900px] md:h-[1200px] w-screen bg-[url('../assets/images/bg-curvy-mobile.svg')] md:bg-[url('../assets/images/bg-curvy-desktop.svg')] bg-no-repeat bg-bottom bg-contain`}
+        className={`bg-[#1c2431] h-[600px] sm:h-[900px] md:h-[1200px] max-w-screen bg-[url('../assets/images/bg-curvy-mobile.svg')] md:bg-[url('../assets/images/bg-curvy-desktop.svg')] bg-no-repeat bg-bottom bg-contain`}
       >
         <header className="z-10 container max-w-6xl m-auto pt-6 px-6 md:px-0 flex justify-between">
           <div>

@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${open_sans.className} text-sm text-gray-300 bg-[#181f2a] overflow-x-hidden`}>{children}</body>
+      <body className={`${open_sans.className} text-sm text-gray-300 bg-[#181f2a]`}>{children}</body>
     </html>
   )
 }
