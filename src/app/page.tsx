@@ -258,13 +258,12 @@ export default function Home() {
         </section>
       </section>
       <footer className="bg-[#0b1523] w-screen pb-12 m-0">
-        <div className="bg-[#1c2230] max-w-3xl px-14 pb-4 mx-6 relative top-[-150px] md:top-[-100px] flex flex-col items-center md:mx-auto rounded-md">
-          <label
-            for="email"
+        <label className="bg-[#1c2230] max-w-3xl px-14 pb-4 mx-6 relative top-[-150px] md:top-[-100px] flex flex-col items-center md:mx-auto rounded-md">
+          <h2
             className={`${raleway.className} font-bold text-lg md:text-3xl text-center md:text-left text-white mt-10 mb-5`}
           >
             Get eraly access today
-          </label>
+          </h2>
           <p className="text-center mb-5">
             It only takes a minuteto sign up and our starter tier is extremely
             generous. If you have any questions, our support team would be happy
@@ -305,7 +304,7 @@ export default function Home() {
               {errors.email && "Please enter a valid email address"}
             </div>
           </div>
-        </div>
+        </label>
         <div className="container max-w-6xl m-auto px-6 md:px-0">
           <img
             src="./assets/images/logo.svg"
