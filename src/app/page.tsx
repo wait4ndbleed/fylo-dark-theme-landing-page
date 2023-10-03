@@ -91,8 +91,8 @@ export default function Home() {
               Get Started
             </button>
           </div>
-          <section className="w-screen">
-            <div className="container max-w-4xl m-auto grid md:grid-cols-2 gap-28 pr-10 md:pr-0">
+          <section>
+            <div className="container max-w-4xl m-auto grid md:grid-cols-2 gap-28">
               <div className="flex flex-col items-center">
                 <img src="./assets/images/icon-access-anywhere.svg" alt="" />
                 <h2
